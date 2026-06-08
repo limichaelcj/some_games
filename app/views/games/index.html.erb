@@ -8,13 +8,16 @@
   <h1>Games</h1>
 
   <div id="games">
-    <div class="container">
-      <% @games.each do |game| %>
-        <%= render game %>
-        <p>
-          <%= link_to "Show this game", game %>
-        </p>
-      <% end %>
+    <div class="container-lg">
+      <div class="row row-cols-auto justify-content-center gx-3 gy-4">
+        <% @games.each do |game| %>
+          <div class="col">
+            <%= link_to game, class: 'text-decoration-none text-reset' do %>
+              <%= render game, payment_methods: @payment_methods %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 
