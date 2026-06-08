@@ -1,0 +1,16 @@
+@import "./gradient_ring_background";
+
+$paper-pawn: #f4f6fa;
+
+html,
+body {
+  background-color: $paper-pawn;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  z-index: 1; // render main content on top of the gradient ring background
+  position: relative; // required for z-indexing
+  background: transparent;
+}
