@@ -1,0 +1,27 @@
+<footer class="site-footer pb-4">
+  <div class="offset-figure container-lg">
+    <%= image_tag 'Logo_GLASS.png', class: 'logo-glass', alt: 'Logo Glass' %>
+  </div>
+  <div class="container-lg">
+    <nav class="footer-nav d-flex flex-row justify-content-between">
+      <a class="footer-nav-brand" href="/">
+        <%= inline_svg 'brand.svg' %>
+      </a>
+      <div class="footer-nav-menu navbar-nav flex-row">
+        <%= link_to "About", "#", class: "nav-link ps-3" %>
+        <%= link_to "Support", "#", class: "nav-link ps-3" %>
+        <%= link_to "Privacy Policy", "#", class: "nav-link ps-3" %>
+      </div>
+    </nav>
+  </div>
+  <div class="container-lg d-flex flex-row justify-content-center mb-5">
+    <%= link_to "Find events near you", '#', class: 'btn btn-primary border-0 fw-medium footer-action-btn' %>
+  </div>
+  <div id="footer-socials" class="container-lg d-flex flex-row justify-content-center mb-3">
+    <% %w(facebook instagram x).each do |social| %>
+      <%= link_to "#", class: 'footer-social-link', alt: social do %>
+        <%= inline_svg "social_icons/#{social}.svg" %>
+      <% end %>
+    <% end %>
+  </div>
+</footer>
