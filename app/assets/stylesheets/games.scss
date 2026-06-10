@@ -60,27 +60,27 @@ main {
   }
 
   .card-title {
-    font-family: "Rubik", sans-serif;
+    font-family: $font-primary;
   }
 
   .game-condition {
-    font-family: "Inter", sans-serif;
+    font-family: $font-secondary;
     font-size: 0.7rem;
     color: $theme-gray;
   }
 
   .game-price {
-    font-family: "Rubik", sans-serif;
+    font-family: $font-primary;
   }
 
   .game-bids {
-    font-family: "Roboto", sans-serif;
+    font-family: $font-body;
     font-size: 0.6rem;
     color: $theme-primary-light;
   }
 
   .game-accepted-payments {
-    font-family: "Roboto", sans-serif;
+    font-family: $font-body;
     font-size: 0.6rem;
     color: $theme-gray;
 

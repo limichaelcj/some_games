@@ -29,12 +29,12 @@
 
   .footer-nav-menu {
     font-size: 0.8rem;
-    font-family: "Inter", sans-serif;
+    font-family: $font-secondary;
     color: $theme-gray;
   }
 
   .footer-action-btn {
-    font-family: "Inter", sans-serif;
+    font-family: $font-secondary;
     font-size: 0.8rem;
     padding: 1em 2em;
     background: linear-gradient(
