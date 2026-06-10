@@ -3,11 +3,13 @@
     <%= image_tag 'Logo_GLASS.png', class: 'logo-glass', alt: 'Logo Glass' %>
   </div>
   <div class="container-lg">
-    <nav class="footer-nav d-flex flex-row justify-content-between">
-      <a class="footer-nav-brand" href="/">
-        <%= image_tag 'brand.svg', alt: 'Turnip Cake', style: 'filter: invert(1)' %>
-      </a>
-      <div class="footer-nav-menu navbar-nav flex-row">
+    <nav class="footer-nav row gy-3 align-items-center">
+      <div class="col-12 col-lg-auto">
+        <a class="footer-nav-brand" href="/">
+          <%= image_tag 'brand.svg', alt: 'Turnip Cake', style: 'filter: invert(1)' %>
+        </a>
+      </div>
+      <div class="footer-nav-menu navbar-nav col-12 col-lg-auto flex-column flex-lg-row ms-lg-auto">
         <%= link_to "About", "#", class: "nav-link ps-3" %>
         <%= link_to "Support", "#", class: "nav-link ps-3" %>
         <%= link_to "Privacy Policy", "#", class: "nav-link ps-3" %>

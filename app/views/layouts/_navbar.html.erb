@@ -3,11 +3,16 @@
     <a class="navbar-brand" href="/">
       <%= image_tag 'brand.svg', alt: 'Turnip Cake' %>
     </a>
-    <div class="navbar-nav">
-      <%= link_to "Sell", "/sell", class: "nav-link" %>
-      <%= link_to "FAQs", "/faq", class: "nav-link" %>
-      <%= link_to "Prices", "/prices", class: "nav-link" %>
-      <%= link_to "Login", "/login", class: "nav-link" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto">
+        <%= link_to "Sell", "/sell", class: "nav-link" %>
+        <%= link_to "FAQs", "/faq", class: "nav-link" %>
+        <%= link_to "Prices", "/prices", class: "nav-link" %>
+        <%= link_to "Login", "/login", class: "nav-link" %>
+      </div>
     </div>
   </div>
 </nav>
