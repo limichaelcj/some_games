@@ -5,7 +5,7 @@
   <div class="container-lg">
     <nav class="footer-nav d-flex flex-row justify-content-between">
       <a class="footer-nav-brand" href="/">
-        <%= inline_svg 'brand.svg' %>
+        <%= image_tag 'brand.svg', alt: 'Turnip Cake', style: 'filter: invert(1)' %>
       </a>
       <div class="footer-nav-menu navbar-nav flex-row">
         <%= link_to "About", "#", class: "nav-link ps-3" %>
@@ -19,8 +19,8 @@
   </div>
   <div id="footer-socials" class="container-lg d-flex flex-row justify-content-center mb-3">
     <% %w(facebook instagram x).each do |social| %>
-      <%= link_to "#", class: 'footer-social-link', alt: social do %>
-        <%= inline_svg "social_icons/#{social}.svg" %>
+      <%= link_to "#", class: 'footer-social-link' do %>
+        <%= image_tag "social_icons/#{social}.svg", alt: social %>
       <% end %>
     <% end %>
   </div>
